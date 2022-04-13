@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\QueryBuilder;
+namespace App\Classes\QueryBuilder\lib;
 
 use Rutek\Dataclass\Collection;
 

@@ -2,10 +2,11 @@
 
 namespace App\Classes\QueryBuilder;
 
-use App\Classes\QueryBuilder\NodeModel;
-use App\Classes\QueryBuilder\Base;
+use App\Classes\QueryBuilder\lib\NodeModel;
+use App\Classes\QueryBuilder\types\Base;
+use App\Classes\QueryBuilder\lib\Helper;
 
-class Query
+class GenerateQuery
 {
     public $nodes;
     public $edges;
@@ -41,7 +42,7 @@ class Query
                 }
 
                 if (!class_exists($typeClass)) {
-                    $transformerClassName = '\\App\\Classes\\QueryBuilder\\' . $typeClass;
+                    $transformerClassName = '\\App\\Classes\\QueryBuilder\\types\\' . $typeClass;
                     $objectClassName = '\\App\\Classes\\QueryBuilder\\TransformObjects\\' . $typeClass;
 
                     $transformObject = new $objectClassName($transformObj);

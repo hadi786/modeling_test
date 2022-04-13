@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\QueryBuilder;
+namespace App\Classes\QueryBuilder\types;
 
 use App\Classes\QueryBuilder\TransformObjects\Input as TransformObjectsInput;
 
