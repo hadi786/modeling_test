@@ -9,4 +9,4 @@ To start your Laravel server:
   * Install composer dependencies with `composer install`
   * Start laravel application with `php artisan serve`
 
-Now you can visit [`127.0.0.1:8000`](http://127.0.0.1:8000/transform) from your browser.
+Now you can visit [`127.0.0.1:8000/transform`](http://127.0.0.1:8000/transform) from your browser.
