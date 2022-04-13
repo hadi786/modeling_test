@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Classes\TransformObjects;
+namespace App\Classes\QueryBuilder\TransformObjects;
 
-class Filter
+class Output
 {
-    public $variable_field_name;
-    public $joinOperator;
-    public $operations;
+    public $limit;
+    public $offset;
 
     public function __construct(array $data)
     {

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Classes\TransformObjects;
+namespace App\Classes\QueryBuilder\TransformObjects;
 
-class Output
+class Text
 {
-    public $limit;
-    public $offset;
+    public $column;
+    public $transformation;
 
     public function __construct(array $data)
     {

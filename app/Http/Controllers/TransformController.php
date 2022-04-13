@@ -3,15 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Classes\QueryBuilder;
+use App\Classes\QueryBuilder\Query;
 
 class TransformController extends Controller
 {
     public function index(){
-      $json = base_path('resources/request-data.json');
-      $jsonObject = json_decode(file_get_contents($json), true);
-
-      $builder = new QueryBuilder($jsonObject);
-      echo $builder->build();
+        $file = base_path('resources/request-data.json');
+        $jsonObject = json_decode(file_get_contents($file), true);
+        $builder = new Query($jsonObject);
+        echo $builder->build();
     }
 }

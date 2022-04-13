@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Classes\TransformObjects;
+namespace App\Classes\QueryBuilder\TransformObjects;
 
-class Text
+class Sort
 {
-    public $column;
-    public $transformation;
+    public $target;
+    public $order;
 
     public function __construct(array $data)
     {

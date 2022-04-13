@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\QueryBuilder;
 
-use App\Classes\TransformObjects\Input as TransformObjectsInput;
+use App\Classes\QueryBuilder\TransformObjects\Input as TransformObjectsInput;
 
 class Input extends Base
 {

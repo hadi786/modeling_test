@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\QueryBuilder;
 
-use App\Classes\TransformObjects\Filter as TransformObjectsFilter;
+use App\Classes\QueryBuilder\TransformObjects\Filter as TransformObjectsFilter;
 
 class Filter extends Base
 {

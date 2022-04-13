@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\QueryBuilder;
 
-use App\Classes\NodeModel;
+use App\Classes\QueryBuilder\NodeModel;
+use App\Classes\QueryBuilder\Base;
 
-class QueryBuilder
+class Query
 {
     public $nodes;
     public $edges;
@@ -26,7 +27,7 @@ class QueryBuilder
     {
         if (!empty($this->nodes)) {
             $sql = "";
-            $transformerClass = new \App\Classes\Base;
+            $transformerClass = new Base;
 
             foreach ($this->nodes as $node) {
                 $key = $node['key'];
@@ -40,8 +41,8 @@ class QueryBuilder
                 }
 
                 if (!class_exists($typeClass)) {
-                    $transformerClassName = '\\App\\Classes\\' . $typeClass;
-                    $objectClassName = '\\App\\Classes\\TransformObjects\\' . $typeClass;
+                    $transformerClassName = '\\App\\Classes\\QueryBuilder\\' . $typeClass;
+                    $objectClassName = '\\App\\Classes\\QueryBuilder\\TransformObjects\\' . $typeClass;
 
                     $transformObject = new $objectClassName($transformObj);
                     $transformerClass = new $transformerClassName($key, $type, $transformObject, $transformerClass);

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\QueryBuilder;
 
-use App\Classes\TransformObjects\Text as TransformObjectsText;
+use App\Classes\QueryBuilder\TransformObjects\Text as TransformObjectsText;
 
 class Text extends Base
 {

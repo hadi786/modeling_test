@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Classes\TransformObjects;
+namespace App\Classes\QueryBuilder\TransformObjects;
 
-class Sort
+class Filter
 {
-    public $target;
-    public $order;
+    public $variable_field_name;
+    public $joinOperator;
+    public $operations;
 
     public function __construct(array $data)
     {

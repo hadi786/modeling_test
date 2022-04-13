@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\TransformObjects;
+namespace App\Classes\QueryBuilder\TransformObjects;
 
 class Input
 {

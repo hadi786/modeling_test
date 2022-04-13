@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\QueryBuilder;
 
-use App\Classes\TransformObjects\Sort as TransformObjectsSort;
+use App\Classes\QueryBuilder\TransformObjects\Sort as TransformObjectsSort;
 
 class Sort extends Base
 {

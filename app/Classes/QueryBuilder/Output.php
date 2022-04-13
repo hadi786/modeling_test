@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes;
+namespace App\Classes\QueryBuilder;
 
-use App\Classes\TransformObjects\Output as TransformObjectsOutput;
+use App\Classes\QueryBuilder\TransformObjects\Output as TransformObjectsOutput;
 
 class Output extends Base
 {
